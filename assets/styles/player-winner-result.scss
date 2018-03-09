@@ -1,0 +1,17 @@
+@import "variables.scss";
+
+.result {
+    .current_results {
+        text-align: center;
+        width: 100%;
+        color: $white-color;
+        margin-top: 20px;        
+        td {
+            padding: 8px 0;
+            border: 1px solid $white-color;
+        }
+        .player_name {
+            font-size: 13px;
+        }
+    }
+}

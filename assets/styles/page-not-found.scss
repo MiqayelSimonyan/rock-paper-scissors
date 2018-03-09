@@ -1,0 +1,15 @@
+@import 'variables.scss';
+
+.page_not_found_wrapper {
+    padding-top: 100px;
+    text-align: center;
+    color: $white-color;
+    a {
+        color: $white-color;
+        font-size: 17px;
+        border-bottom: 1px solid $white-color;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}

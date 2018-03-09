@@ -1,0 +1,45 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+li {
+    color: $white-color;
+    cursor: pointer;
+    padding: 5px 0;
+    font-size: 22px;
+}
+
+span {
+    color: $white-color;
+    padding: 5px 0;
+}
+
+svg {
+    color: $light-brown;
+}
+
+.game_wrapper {
+    @include user-select-mixin(none);
+    padding-top: 20px;
+    .gameTitle {
+        color: #fff;
+        text-shadow: 2px 2px 5px #2d2727;
+        margin-bottom: 50px;
+        span {
+            font-size: 17px;
+            margin-left: 10px;
+            cursor: pointer;
+            &:hover {
+                border-bottom: 1px solid $white-color;
+            }            
+        }
+    }   
+}
+
+.game-features-appear {
+    opacity: 0;
+}
+
+.game-features-appear.game-features-appear-active {
+    opacity: 1;
+    transition: all 0.6s linear;
+}
